@@ -14,3 +14,7 @@ brew upgrade sortie
 
 - [Sortie on GitHub](https://github.com/sortie-ai/sortie)
 - [Documentation](https://docs.sortie-ai.com)
+
+## License
+
+[Apache License 2.0](LICENSE)
