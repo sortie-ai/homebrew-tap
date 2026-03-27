@@ -1,19 +1,36 @@
 # Homebrew Tap for Sortie
 
+[Sortie](https://github.com/sortie-ai/sortie) is a spec-first orchestration
+service for coding agents.
+
 ## Install
+
 ```bash
 brew install sortie-ai/tap/sortie
 ```
 
 ## Upgrade
+
 ```bash
 brew upgrade sortie
 ```
 
-## More info
+## Uninstall
 
-- [Sortie on GitHub](https://github.com/sortie-ai/sortie)
-- [Documentation](https://docs.sortie-ai.com)
+```bash
+brew uninstall sortie
+```
+
+## Troubleshooting
+
+If the formula fails to install, try:
+
+```bash
+brew update
+brew install sortie-ai/tap/sortie
+```
+
+To report issues, visit [sortie-ai/sortie/issues](https://github.com/sortie-ai/sortie/issues).
 
 ## License
 
