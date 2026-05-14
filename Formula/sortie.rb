@@ -5,21 +5,21 @@
 class Sortie < Formula
   desc "Spec-first orchestration service for coding agents"
   homepage "https://github.com/sortie-ai/sortie"
-  version "1.9.0"
+  version "1.9.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sortie-ai/sortie/releases/download/1.9.0/sortie_1.9.0_darwin_amd64.tar.gz"
-      sha256 "b3bc2e2f5896fa80501e4897b79e6533b13e0507ba104af6be758a5fe4072002"
+      url "https://github.com/sortie-ai/sortie/releases/download/1.9.1/sortie_1.9.1_darwin_amd64.tar.gz"
+      sha256 "c260369460a23e566ffdae5c0d85f7201a9d07c3f321483eecaffe1df7316623"
 
       define_method(:install) do
         bin.install "sortie"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sortie-ai/sortie/releases/download/1.9.0/sortie_1.9.0_darwin_arm64.tar.gz"
-      sha256 "00d70f9d07e08d5e27b6c715730496f953db318649e24bc08aa74b306e82e1c9"
+      url "https://github.com/sortie-ai/sortie/releases/download/1.9.1/sortie_1.9.1_darwin_arm64.tar.gz"
+      sha256 "b051f3e8f44f3488ebf74629de5bd49bbdc97162da076bf6af3de2e4fc5fca30"
 
       define_method(:install) do
         bin.install "sortie"
@@ -29,15 +29,15 @@ class Sortie < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sortie-ai/sortie/releases/download/1.9.0/sortie_1.9.0_linux_amd64.tar.gz"
-      sha256 "9cb8aa705f678e714f1df7d6880ec4c413ade22b8f4ce3dea88343cb172dbbbb"
+      url "https://github.com/sortie-ai/sortie/releases/download/1.9.1/sortie_1.9.1_linux_amd64.tar.gz"
+      sha256 "4ac43ec9c809317364e7e16d8e6c0a701288df2754d2e7e31c5c40622ca82f24"
       define_method(:install) do
         bin.install "sortie"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sortie-ai/sortie/releases/download/1.9.0/sortie_1.9.0_linux_arm64.tar.gz"
-      sha256 "b89ea6353a2593f4698851ca295ee8ee7c9aad9a4ff0759463368878cbe67296"
+      url "https://github.com/sortie-ai/sortie/releases/download/1.9.1/sortie_1.9.1_linux_arm64.tar.gz"
+      sha256 "5fd96910aad65ae5e0ddd83dc438148d3407094d2dea8044980faa783736bcde"
       define_method(:install) do
         bin.install "sortie"
       end
